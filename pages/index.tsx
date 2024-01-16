@@ -24,7 +24,7 @@ import {
   MdChildCare,
 } from 'react-icons/md';
 import axios from 'axios';
-const server = 'http://127.0.0.1:5000';
+const server = process.env.SERVERAPI;
 export default function Chat(props: { apiKeyApp: string }) {
   // *** If you use .env.local variable for your API key, method which we recommend, use the apiKey variable commented below
   const { apiKeyApp } = props;
