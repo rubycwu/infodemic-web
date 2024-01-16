@@ -24,10 +24,12 @@ import {
   MdChildCare,
 } from 'react-icons/md';
 import axios from 'axios';
-const server = process.env.SERVERAPI;
+const server = "https://infodemic-ai-8384301fa9e8.herokuapp.com";
+
 export default function Chat(props: { apiKeyApp: string }) {
   // *** If you use .env.local variable for your API key, method which we recommend, use the apiKey variable commented below
   const { apiKeyApp } = props;
+  console.log(server)
   // Input States
   const [inputOnSubmit, setInputOnSubmit] = useState<string>('');
   const [inputCode, setInputCode] = useState<string>('');
